@@ -3,15 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login and Sign Up</title>
+    <title>Login and Sign up</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
-<body>
-    <div class="container">
-        <form action="" method="get">
-            <div class="form-group"><input type="text" name="" id="" placeholder="Enter username"></div>
-            <div class="form-group"><input type="password" name="" id="" placeholder="Enter password..."></div>
-            <div class="form-group"><button type="submit">Sign In</button></div>
-        </form>
+<body class="bg" background="https://www.psdgraphics.com/wp-content/uploads/2010/07/nature-background.jpg">   
+    
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAaVBMVEX///9AwFc6v1Mku0PN7NG95sM3vlBmyXb4/fl/0Yz7/fvQ7dRMxWLc8eAzvU0tvEmu4bYRuDlWxWnp+Oy047vk9ebt+O/V79mP15vG6cug3Kml3q5zzYFfyHB50IdvzX6Y2qOI1JMAtB8LOHnSAAAOQ0lEQVR4nO1d67aqvA6VVspFoHIHFYTv/R/y4F4NINdAi64zxpr/9l4qnTRN0jRNTqc//OEPfzgGdhLGrkAcJva3x7MPSXyO7lVtlY+nIfB8lFZd3aNznHx7dHiYbpSVRhE4GvE8j/XQ/JNoTlAYZRa55rfHuY70/igaFowRos2AvP6qOcXjnn57tAuwc0vzGhbzPN4oEeZpZf4rl1GiFz71ECzewKhf6L9rCdnJpeTbmQAfXl5+jZ4z43vg8wVxIq/FvyR93A/u8W9QCMk545RNkGAe914LPQiKfwhe6k3859T0ZOdvi1uoW4QPB0cYp9wxysaoXCM9P1/SBpdzrkfXxvSUhtP8ecSo+RlLD79IJYlKMpSvhohmZPcoT0NzYiHYZpjm0T17apwP55OTMvra7ESlNqDiUa+o9LO7OqQkvuhV4Q2VBtce0SdGPsK51N6H0qjZR5TiF7IZp9GDDtabpz3OR456EkmtvYs9p8Y13qph7SSODPo2vYQ59YeXju68USGU1/FOU2HHjTok73Q+KWvx8+3pjDu6lNGzdedNGxD6iFWNdQVmxHuC0ZjC4iL/o5dC6xtVzqOPGNG47k0L8ZxSAZUXLlZfdAmtj58cOw1on4qVq/vt3HK8jg4N0oMdtuTKO33MSKkrFQYzt0i3djx+PdSExnX/1RWRch0aRkV/4o8Utcuz4+LRyj3iGW7VuQWEPRUtyDHygPWm5XyQujHPvclhgcI12UdjKNtX5mcHWukw6/Qlc/QjHnHtXH2PyRnJNdh65/YRflX/gJvfWbTn4SYgfnZ22b+p/vWq5UJY/QHjbNadQ+BXSn/a7rgw54Bpn8K1W6J+pVCqzXurXzznIPUyRu60okbvyoTBvLfLkRsf3DpdjJYNU8XGvmogvrQ8xFDOwS2BDdGuaiRNdzoun9pmCMQlyDdRY2/Ord3n1oe5NGwsmBsWKBDwuAAu1PpCWCvs2BTSrzJpxZY/vxKiC1stwEvJHYGZgdAy40vhxsRoRSOTU2k6GEsWqNFjppm4+rWqy+fTeD6fpZXd7lf9HIdmg2mF5baL1pdSAiFwIZqC5WeGaWQF3KeUc0+Ac04p9X3KHKO+65cpSTq3psGXkA4zAGvJpRWjHZ+rwKfexIHBz+t6hdvpf/ep2dFh2XjBfkGrYMHQ+34W/2Cn1+c4Uj4GnbaNrTtFq70jyDsDs5vFD9xbwVEHazNkTp2C3ikiIVgYT1Ipm3djVrqQZMKneBes2KefMzEAoslFFdyHhqQyT6ZTAqTaM4YcXDIqF8bWnYGAEeLRHpql1O3DZsmcrmLZkD17kMQSr5PXUob3/n5K2ChmL7Bu10h/IYqut6o2HALhpXkySS2WjWdtH88VhDSQyqPI+ocvjJI6nx6KGOo8mdMFbKe3eaubwupnUrvkWzcvjSxl815EtkrmdIURFRudEfsu3iiT8u66bR0hQbVk8BBkkhIEf9KyziMV0QTiyLgx3VaIOSthYwSZViVtlHyzEhNDsi1fGyB8tG5IsWbrMGROmZhnvjjJQ7hCPIgjsSEyb6CTvefqq0SRicXUEG3DqrHBKeMyPtkFDBVDREBRZE6wkumGQFooXinRJEIiCfhTKO2DI2ODQmF4Bwsmxpex/WkbJsLoEByZU+TD1GCHYcPqJ9hvTMCE4AFHxb2RZE5whsuxMgNukNQu1fVBVFEfx5KBfTzF2nIOOkMmiAh+jD+ryGyzg515ODKwagjHDeMsJkbKW7bb1T/9dzPWs6dDWmgajswpgtHhrPlDGH9NxpHJQRwm90LmJSOUe2QHmURMDXtghhGKT/ObTJTq8SM2LJgaXHhjMzmd62TMGxfvGqOd76DKpVx/sG5T6zR90GkqGDKnFLacGIP+FBMj5S7HoBAn7GVazKbaYsgk5c+kk+f6MFLhhMhFyoTfwYzxG3GNhTgNggxE0YizLjo3ofrkNphi6zGx7sx6KbqBIZMGYoir1tgWkyi585+fXr3dr3nUH2E6ovkOiAZ45dpn00IMQyok0+rP0ZIBiW+sXpm74QgYDRoJOSvWhCfSkB9cRPrzKxPnQzroIolTa3jh2toLF26FJ5e4IIY8jgqZGVgJiZlPLDHIlW1wKIwdSonPQ2gRXg3JQNCHWTIvS5hC77FsN88/mkJGCF4Qm/VxLkIOcRKp3xeRDbJyZhuJhSsZKrcEmaEsQaoHM6SkOHyKd7Ioq7ZwfDzJMwwwM0PNDFtpqaBPA7Fo+G1JOcPS0iSzooRL5A3JtOfwkgdxN21GwfTh/pzsyi4Z0xDSOvwZEcIimuSRvkgaYcZSqOQMvozcw4DM6FQ3BbdM6uebGQ5mHtCHDutT7lmzZC7CXw7kfv90ErkBdEFcTeHsEtQubuF35sjk4mUhvPdlPED3z2uA1j5Xco+aJQMzL/myTqdKWOVsXgOE4AVKKptVMrKn143v/aPOynl7GBdC2UheOj6eTPqjFpcynVyxDXFk04cOJ5M4P+vBmdfNqTBpkyGVDTiejBn8PGAh6iLCf2QmcId/1OFkTmJLsxAKVKU5P0BGuJp01lWxI0XP+gAZkaUwH0IGB92rJZ/0ATK1CLTP5jubN0Fmi89sT2GdzOTXXkA+VpyX0tkYMpwxb7nk4T6dCWjaIplG+c+hQO7aRALJ/LkzeDNbwkxp0Y/lD2L682QmvvMPvESSEeEmPpuD2pLZ4M24xlKAcpbMHNAn/Pr/AZkln/7/jww2uwVPZsOaUUyGYFMv1tfMHm2mlAwJsCGuqxjqvDaTIEMmQvq+P3Q2ov+mPtVA7KO8B9ZfX1fNYDSrzWRIobelv3oYPilJJz7UIKxh54gNDlZrRtO+bndnBJnloM86SuEEo+8v1at5AzscTUVkhP8z7wQP8VhzNPdsAdSQSYKt+/XVLcCezZkaMi6E9dG/sr45gyN2Bx+jV0NGBFsYug6IKXxZMj+VENBAJT+Iryghc/95LP5UGBHQEEH6LaEmNWRAM6MzXBChph1BQDVk1nXTAOIceSkICM6ZVqGHoYSMKdyI0XnOLCpt1cjaIgiwIXCuhAxEUgP03RZE4HzHkYYSMjnm7KgPs1g/0jidhcLD63slZGAFoK/oupjDpvYYEC28SsjctrqZqGPARPhv6wlDgNZrji4TGJqN5Dz1qYs4nMaHuAR7b9EuwdE5s7Dea7s5I2wEj402Z/74U6+ylD+/sHys3x+mBRlgi8OEpAYD61cs7TTH124Xd5r4M+4YdoTL7Nt0E+yiUbhtZuhMKmS6CSQCMaz4qiSDLmdzE2tsLY0UUrSwV+4UkvGwmU7YFK3NyXMqZwabUHPBJs9Blh324oDKWDM2x+0Ke8i1Fw4Jp8sqvIP7cIIxVslMfCdYvZcmAMYQkXqlIhV49XxG6jSrvf61rqTaJG2JqjXHnpxB8izmdUOumEQy4KFk2jRSTAwJLjZ4+y/OH0rmAonRGH0BCdZ4H3aEI8l0ycQoDQVXiL3dcnYkGbh2yUrUxy9wEWp3bvORZKA2yPSVqTHgAh3b+8AjybCNg7vKTs2BZNqJQe99oCIB3fnEA8lAJQ2O1k43oL8zvfk4MjtGFoIn7O3TzoeRMSGVmOA1bXuFHu2VD555FBkohbPlCn1b3EBDXFKbwFFkUpiXLcUN2pudGtl1z+UgMqYFV8633YdN21Iee24gHURG7II3F47rSrXsKZp7DJn4ubNUS3c1dFMmncAxZKC+iLc9FAzljYi2/frJIWTytn7Gdsk34V6Qt13QjiATQ4WzPYWnILj5UupbNdoBZEwwfWthzBnc2ip6W+85HECmrXGIjrW+I2kLaW01nerJQO2o3WX04NLWq9TStk2ncjJJe+0eVcRmEuCjahS3RwUoJ2MpqIFpFm1R0GrT9xSTgZpejYhI3B8J20A32/JKFJOB4FczMVIXe/Ou+OwGlaaWTFcOYZQmuQ3tzmbTRVSlZPKuKrlsRf2kK5SKZ6OSTN6W4eR7TP874lYreuiOIwrJnNvCxPhD4wW09SvxbNSRyYOuYLuSVjR52wfCQx5CKyPTNW3YIOTLiLrqKrh2aqrIdGVrpWpuvMG+tj27GOogQRGZe1dNmClq2HDqsrdfr8hDbAiUkDGrrkHUYl7ZZty7VjpsvQeFCjJx2Z3J+0q5vLNZ3R4pIHMp+lx2D3sGkd9OOiMrEixNxr52zduIf0D3Hr3fr20ha/UkTya0Ojkg8lX8p9DZm1d/1XxBD8iRMXOn1+jsqE5EF6Nrq0hoNq8HpMjEWdfJlTDjsBZ0btlrEkmD2c7EEmQSvd8Vkh3ZiSis+i0vuTUja7vJmLnVa+tA2JF97pqn6axX0c9zskktvZOMfcn6Zfc97fCW7qnRyxkjLKgnwlD7yKR10O/SSw3JSh4YhLd+N92GjjVao3vIDKgQWn2keY+da/2EPkLIsA3tdjJp+d6knmr5wT1bWyT1ex/sYa/jjWRsPXjv5sLoR/tQn4P3ftqEcittVdsWMmZav/egfknux1r2iTFU/U6+L3DfubnJP0JYMmYS3xz/vXgrYc7mUwd5uNaQDqO+U+VuaGLImImbN0wGfdtfzZM/2rGvRW457y1MXoaUOuVNn7sRosNlIze/lw4df9uxDnErMTD1ekSnebldR6O57FnH4dQbfZE7tdo+0BthniuHDkfVYT6vefRRwrVspp3L52Cm98CfyzpHZ5yzRnuk36byghnqBp2eHhwZQqkRxd8UsDeYcaWNljOSTKMyqlHhgC/DTmvqD9uyrZEh3KfW5ZcxEXCrwmO93lhLZAhhzAsWGh/9AiR6bQSO9rpIRqavab1YEM0Jivrw7YoKhOd7/XhRGh0N6z5xnMB4WPfzl7pz7kOS6tdqKEQX6xbpv0IF/+EPf/jDL8b/AO7e0wgsyPM1AAAAAElFTkSuQmCC" width="30" height="30" class="d-inline-block align-top" alt="fakeboot logo">
+          Fakeboot
+        </a>
+      </nav>
+
+    <div id="login">
+        <h3 class="text-center pt-5">Welcome</h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="" method="post">
+                            <h3 class="text-center text-info">Login</h3>
+                            <div class="form-group">
+                                <label for="username" class="text-info">Username:</label><br>
+                                <input type="text" name="username" id="username" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info">Password:</label><br>
+                                <input type="text" name="password" id="password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                                <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
+                            </div>
+                            <div id="register-link" class="text-right">
+                                <a href="#" class="text-info">Register here</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
