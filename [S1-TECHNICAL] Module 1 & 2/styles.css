@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+}
+
+.dark-mode .resume {
+    border: 2px solid #d4d4d4;
+}
+
+/* VSC Theme (night owl riffoff bedsttt theme uwuuwuw) */
+.vscode-theme {
+    background-color: #0d1117;
+    color: #58a6ff; /* blue text */
+}
+
+.vscode-theme .resume {
+    border: 2px solid #58a6ff;
+}
+
+.resume {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: gray;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
