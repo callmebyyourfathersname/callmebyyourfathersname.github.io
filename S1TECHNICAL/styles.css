@@ -31,10 +31,10 @@ body {
     border-radius: 10px;
 }
 
+
 button {
-    position: fixed;
     padding: 10px;
-    background-color: gray;
+    background-color:rgb(13, 13, 74);
     border: none;
     color: white;
     cursor: pointer;
