@@ -55,7 +55,7 @@ form .display input {
 
 form input.equal {
     width: 60px; /* Adjusted to match other buttons */
-    height: 60px; /* Adjusted to match other buttons */
+    height: flex; /* Adjusted to match other buttons */
     background-image: url('https://e0.pxfuel.com/wallpapers/101/695/desktop-wallpaper-chibi-kamisama-hajimemashita-manga-shoujo-kawaii-kamisama.jpg');
     background-size: cover;
     background-position: center;
@@ -119,7 +119,7 @@ canvas {
 }
 
 .button-row {
-    display: flex;
+    display: ;
     justify-content: space-between;
 }
 
