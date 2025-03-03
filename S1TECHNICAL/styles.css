@@ -31,9 +31,10 @@ body {
     border-radius: 10px;
 }
 
+
 button {
     padding: 10px;
-    background-color: gray;
+    background-color:rgb(13, 13, 74);
     border: none;
     color: white;
     cursor: pointer;
@@ -43,5 +44,5 @@ button {
 img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 15%;
 }
