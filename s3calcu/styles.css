@@ -119,10 +119,12 @@ canvas {
 }
 
 .button-row {
-    display: ;
+    display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
+
 .button-row input.zero {
-    width: 145px;
+    flex-grow: 2;
 }
