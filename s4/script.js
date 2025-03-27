@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
             hours: 'Open 24 hours',
             price: 'PRICE: ₱200.00',
             
-            image: 'omelet.jpg'
+            image: 'img/omelet.jpg'
         },
         'Tonkatsu': {
             title: 'Tonkatsu',
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             phone: '123 456 7890',
             hours: 'Open 24 hours',
             price: 'PRICE: ₱200.00',
-            image: 'Tonkatsu.jpg'
+            image: 'img/tonkatsu.jpg'
         },
         'Ramen': {
             title: 'Ramen',
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
             phone: '123 456 7890',
             hours: 'Open 24 hours',
             price: 'PRICE: ₱200.00',
-            image: 'ramen.jpg'
+            image: 'img/ramen.jpg'
         },
         'Burger': {
             title: 'Burger',
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             phone: '123 456 7890',
             hours: 'Open 24 hours',
             price: 'PRICE: ₱200.00',
-            image: 'burger.png'
+            image: 'img/burger.png'
         }
     };
 
