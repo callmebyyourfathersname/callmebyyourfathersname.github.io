@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Rocket GO - Transaction History</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/transactions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/rocket-logo.png" alt="Team Rocket Logo">
+                <span class="logo-text">TEAM ROCKET GO</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="transactions.html" class="active">History</a></li>
+                <li><a href="#" id="logoutBtn">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Transaction History -->
+    <div class="transactions-container">
+        <h1>YOUR ROCKET TRANSACTIONS</h1>
+        
+        <div class="transactions-filter">
+            <div class="filter-group">
+                <label for="filterMonth">Month:</label>
+                <select id="filterMonth">
+                    <option value="all">All</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <!-- More months -->
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="filterYear">Year:</label>
+                <select id="filterYear">
+                    <option value="2023">2023</option>
+                    <option value="2024" selected>2024</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="transactions-list" id="transactionsList">
+            <!-- Transactions will be loaded here -->
+            <div class="no-transactions">
+                <img src="images/empty-transactions.png" alt="No transactions">
+                <p>No transactions yet. Time to prepare for trouble!</p>
+                <a href="index.html" class="btn btn-red">SHOP NOW</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/rocket-logo-small.png" alt="Team Rocket Logo">
+                <span>TEAM ROCKET GO</span>
+            </div>
+            <div class="footer-disclaimer">
+                <p>Disclaimer: This website is for educational purposes only and no copyright infringement is intended. All images are property of Niantic.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/transactions.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon GO Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="https://store.pokemongolive.com/img/logo-pokemongo.png" alt="Pokémon GO Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Featured</a></li>
+      <li><a href="#">Item Boxes</a></li>
+      <li><a href="#">PokéCoins</a></li>
+      <li><a href="#">Daily Bundles</a></li>
+    </ul>
+    <a href="#" class="sign-in-btn">Sign In</a>
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-logo">
+        <img src="https://store.pokemongolive.com/img/logo-pokemongo.png" alt="Pokémon GO Logo">
+      </div>
+      <div class="hero-text">
+        <h1>Get up and GO!</h1>
+        <p>Download Today</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn"><i class="fab fa-apple"></i> App Store</a>
+          <a href="#" class="btn"><i class="fab fa-google-play"></i> Google Play</a>
+          <a href="#" class="btn"><i class="fab fa-galactic-republic"></i> Galaxy Store</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Item Boxes Section -->
+  <section class="section item-boxes">
+    <h2>Item Boxes</h2>
+    <div class="product-grid">
+      <!-- 10 Placeholder Items -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Item 1">
+        <h3>Item 1</h3>
+        <p>Description for Item 1.</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+      <!-- Repeat for 9 more items -->
+      <!-- Example for Item 2 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="Item 2">
+        <h3>Item 2</h3>
+        <p>Description for Item 2.</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+      <!-- Add 8 more items similarly -->
+    </div>
+  </section>
+
+  <!-- PokéCoins Section -->
+  <section class="section poke-coins">
+    <h2>PokéCoins</h2>
+    <div class="product-grid">
+      <!-- 6 Placeholder Items -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="PokéCoin Pack 1">
+        <h3>PokéCoin Pack 1</h3>
+        <p>Description for PokéCoin Pack 1.</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+      <!-- Repeat for 5 more items -->
+      <!-- Example for PokéCoin Pack 2 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="PokéCoin Pack 2">
+        <h3>PokéCoin Pack 2</h3>
+        <p>Description for PokéCoin Pack 2.</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+      <!-- Add 4 more items similarly -->
+    </div>
+  </section>
+
+  <!-- Daily Bundles Section -->
+  <section class="section daily-bundles">
+    <h2>Daily Bundles</h2>
+    <div class="product-grid">
+      <!-- 1 Display Holder -->
+      <div class="product-card large">
+        <img src="https://via.placeholder.com/300" alt="Daily Bundle">
+        <h3>Daily Bundle</h3>
+        <p>Description for Daily Bundle.</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Pokémon GO. This is a recreation for educational purposes only.</p>
+  </footer>
+
+  <script>
+    // JavaScript for mobile menu toggle
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

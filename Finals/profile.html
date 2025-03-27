@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Rocket GO - Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/rocket-logo.png" alt="Team Rocket Logo">
+                <span class="logo-text">TEAM ROCKET GO</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+                <li><a href="transactions.html">History</a></li>
+                <li><a href="#" id="logoutBtn">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Profile Content -->
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <img src="images/default-avatar.png" alt="User Avatar" id="userAvatar">
+                <button class="btn-edit" id="editAvatarBtn"><i class="fas fa-camera"></i></button>
+            </div>
+            <h1 id="username">TEAM ROCKET MEMBER</h1>
+            <p class="player-id" id="profilePlayerId">ID: #### #### ####</p>
+        </div>
+
+        <div class="profile-details">
+            <h2>MEMBER DETAILS</h2>
+            <div class="detail-item">
+                <span class="detail-label">Email:</span>
+                <span class="detail-value" id="profileEmail">rocketmember@teamrocket.com</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Birthday:</span>
+                <span class="detail-value" id="profileBirthday">January 1, 1990</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Gender:</span>
+                <span class="detail-value" id="profileGender">Not specified</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Member Since:</span>
+                <span class="detail-value" id="joinDate">Today</span>
+            </div>
+        </div>
+
+        <div class="profile-stats">
+            <h2>ROCKET STATS</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="pokemonCaught">0</div>
+                    <div class="stat-label">Pokémon Caught</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="gymsDefended">0</div>
+                    <div class="stat-label">Gyms Defended</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="itemsPurchased">0</div>
+                    <div class="stat-label">Items Purchased</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="totalSpent">0</div>
+                    <div class="stat-label">Total PokéCoins Spent</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/rocket-logo-small.png" alt="Team Rocket Logo">
+                <span>TEAM ROCKET GO</span>
+            </div>
+            <div class="footer-disclaimer">
+                <p>Disclaimer: This website is for educational purposes only and no copyright infringement is intended. All images are property of Niantic.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>

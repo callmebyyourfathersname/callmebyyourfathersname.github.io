@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Rocket GO Webstore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/rocket-logo.png" alt="Team Rocket Logo">
+                <span class="logo-text">TEAM ROCKET GO</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="transactions.html">History</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div class="hero-carousel">
+        <div class="carousel-slide active">
+            <img src="images/hero1.jpg" alt="Team Rocket Promotion">
+            <div class="carousel-caption">
+                <h2>PREPARE FOR TROUBLE!</h2>
+                <p>Get exclusive Team Rocket bundles today</p>
+                <button class="btn btn-yellow" onclick="document.querySelector('#item-boxes').scrollIntoView()">Shop Now</button>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <img src="images/hero2.jpg" alt="Pokémon GO Event">
+            <div class="carousel-caption">
+                <h2>MAKE IT DOUBLE!</h2>
+                <p>Double PokéCoins for limited time</p>
+                <button class="btn btn-yellow" onclick="document.querySelector('#poke-coins').scrollIntoView()">Get Coins</button>
+            </div>
+        </div>
+        <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Store Tabs -->
+    <div class="store-tabs">
+        <button class="store-tab active" data-target="featured">Featured</button>
+        <button class="store-tab" data-target="item-boxes">Item Boxes</button>
+        <button class="store-tab" data-target="poke-coins">PokéCoins</button>
+        <button class="store-tab" data-target="daily-bundles">Daily Bundles</button>
+    </div>
+
+    <!-- Store Sections -->
+    <div class="store-container">
+        <!-- Featured Items -->
+        <section id="featured" class="store-section active">
+            <h2 class="section-title">Featured Items</h2>
+            <div class="items-grid" id="featuredItems">
+                <!-- Loaded via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Item Boxes -->
+        <section id="item-boxes" class="store-section">
+            <h2 class="section-title">Item Boxes</h2>
+            <div class="items-grid" id="itemBoxes">
+                <!-- Loaded via JavaScript -->
+            </div>
+        </section>
+
+        <!-- PokéCoins -->
+        <section id="poke-coins" class="store-section">
+            <h2 class="section-title">PokéCoins</h2>
+            <div class="items-grid" id="pokeCoins">
+                <!-- Loaded via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Daily Bundles -->
+        <section id="daily-bundles" class="store-section">
+            <h2 class="section-title">Daily Bundles</h2>
+            <div class="items-grid" id="dailyBundles">
+                <!-- Loaded via JavaScript -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <div class="cart-title">YOUR ROCKET ORDER</div>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart-message">Your cart is empty. Prepare for trouble by adding items!</div>
+        </div>
+        <div class="cart-summary">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">0 PokéCoins</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">MAKE IT DOUBLE!</button>
+        </div>
+    </div>
+    
+    <!-- Cart Toggle -->
+    <button class="cart-toggle" id="cartToggle">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cartCount">0</span>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/rocket-logo-small.png" alt="Team Rocket Logo">
+                <span>TEAM ROCKET GO</span>
+            </div>
+            <div class="footer-disclaimer">
+                <p>Disclaimer: This website is for educational purposes only and no copyright infringement is intended. All images are property of Niantic.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
